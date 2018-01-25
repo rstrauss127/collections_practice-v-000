@@ -28,7 +28,14 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  array.sort do |a, b|
-    array[a] <=> array[b]
+  i = array.size -1
+  j = 0
+  while i != j
+    holder = array[i]
+    array[i] = array[j]
+    array[j] = holder
+    i-1
+    j+1
   end
+  array
 end
