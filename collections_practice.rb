@@ -28,14 +28,14 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  i = array.size -1
+  i = array.length -1
   j = 0
   while i != j
     holder = array[i]
     array[i] = array[j]
     array[j] = holder
-    i-1
-    j+1
+    i=i-1
+    j=j+1
   end
   array
 end
