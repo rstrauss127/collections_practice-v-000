@@ -28,5 +28,5 @@ def swap_elements(array)
 end
 
 def reverse_array(array)
-  array.sort {|x, y| array[x]<=>array[y]}
+  array.reverse
 end
