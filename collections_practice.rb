@@ -38,4 +38,5 @@ def kesha_maker(array)
     x.insert(2, "$")
     kesha << x.join
   end
+  kesha 
 end
