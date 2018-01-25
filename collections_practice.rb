@@ -53,11 +53,10 @@ end
 
 def add_s(array)
   array.each {|i| i + "s"}
-  
+
   x = []
   x << array[2].split(//)
   x.pop
   array[2] = x.join
   array
 end
-  
