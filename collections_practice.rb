@@ -37,7 +37,10 @@ def kesha_maker(array)
     holder = word.split(//)
     holder[2] = "$"
     kesha << holder.join
-
   end
   kesha
+end
+
+def find_a(array)
+  array.select {|i| i.start_with?("a")}
 end
