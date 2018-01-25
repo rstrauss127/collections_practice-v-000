@@ -33,7 +33,12 @@ end
 
 def kesha_maker(array)
   kesha = []
-  array.map do |word|
-    word.insert(2, '$')
+  holder = []
+  array.each do |word|
+    holder = word.split
+    holder.insert(2, '$')
+    kesha << holder.join
   end
+  kesha
 end
+    
