@@ -53,8 +53,8 @@ end
 
 def add_s(array)
   array.each {|i| i + "s"}
-  x = array[2].split(//)
+  x = array[1].split(//)
   x.pop
-  array[2] = x.join
+  array[1] = x.join
   array
 end
