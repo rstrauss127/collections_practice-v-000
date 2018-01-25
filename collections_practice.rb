@@ -52,7 +52,7 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each {|i| i + "s"}
+  array.collect {|i| array[i] + 's'}
   x = array[1].split(//)
   x.pop
   array[1] = x.join
