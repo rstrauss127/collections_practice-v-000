@@ -56,10 +56,9 @@ def add_s(array)
   array.collect do |word|
     new << word + 's'
   end
-  x = new[2].split(//)
+  x = new[1].split(//)
   x.pop
-  new[2] = x
+  new[1] = x
   new
 
 end
-    
