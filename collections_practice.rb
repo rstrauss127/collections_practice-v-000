@@ -30,3 +30,12 @@ end
 def reverse_array(array)
   array.reverse
 end
+
+def kesha_maker(array)
+  kesha = []
+  array.each do |word|
+    x = word.split
+    x.insert(2, "$")
+    kesha << x.join
+  end
+end
