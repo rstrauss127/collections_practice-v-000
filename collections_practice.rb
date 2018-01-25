@@ -58,7 +58,7 @@ def add_s(array)
   end
   x = new[1].split(//)
   x.pop
-  new[1] = x
+  new[1] = x.join
   new
 
 end
