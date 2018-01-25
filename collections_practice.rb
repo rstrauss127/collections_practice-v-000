@@ -52,9 +52,14 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.collect {|word| word +"s"}
-  x = array[1].split(//)
+  new = []
+  array.collect do |word|
+    new << word + 's'
+  end
+  x = new[2].split(//)
   x.pop
-  array[1] = x.join
-  array
+  new[2] = x 
+  new
+
 end
+    
