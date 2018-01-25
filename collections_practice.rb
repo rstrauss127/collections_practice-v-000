@@ -26,3 +26,6 @@ def swap_elements(array)
   array[2] = holder
   array
 end
+
+def reverse_array(array)
+end
