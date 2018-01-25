@@ -33,11 +33,7 @@ end
 
 def kesha_maker(array)
   kesha = []
-  array.each do |word|
-    x = word.split
-    x.insert(2, "$")
-    x.join
-    kesha << x
+  array.map do |word|
+    word.insert(2, '$')
   end
-  kesha
 end
